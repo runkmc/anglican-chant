@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+
+\usepackage{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{libertine}
+\usepackage{graphicx}
+\usepackage{coelacanth}
+\usepackage{psalm}
+
+\pagestyle{empty}
+
+\geometry{
+  paperheight=8.5in,
+  paperwidth=5.5in,
+  margin=1cm,
+  heightrounded,
+}
+
+\begin{document}
+
+{\Large \textbf{Psalm 151}}\hfill\textit{An example psalm}\\
+\begin{center}
+    \includegraphics[width=\textwidth]{chant.png}
+\end{center}
+\vspace{12pt}
+
+% override width of verse text because these lines are quite short
+% \setlength\textamount{9cm}
+
+\begin{center}
+\begin{psalm}[9] % override number of first verse (optional)
+
+\vs{Full\quad\dyn{f}}{The half letter size does not in- | clude dy- | namics}
+{\dyn{p}}{Because | there_is no | room for  | them.}
+
+\vs{Full\quad\dyn{mf}}{For compatibility they | should be_left | in}
+{}{so you can use the same | text with | multiple | sizes.}
+
+\vs{}{Sometimes you may want to pause * in the | middle_of a | verse}
+{}{Or to specify the n\syl{u}mb\syl{e}r of | syllab-les | using | dots.}
+
+\vs{}{If a verse is very long and goes on and on forever\breaklongline
+    you may want to break in the | middle_of a | line}
+{}{And sometimes you may want a vertical | space | after_a | verse.}
+
+\stanzagap
+
+\vsnonums{\dyn{f}}{Verse numbers are | auto- | matic}
+{}{But | sometimes_you | may not | want them}
+
+\vsnonums{}{For example | in the | Gloria}
+{}{At the | end | of a | psalm.}
+
+\end{psalm}
+\end{center}
+
+\end{document}
