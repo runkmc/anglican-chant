@@ -8,7 +8,7 @@ chant.png: chant.pdf
 	convert -density 600 chant.pdf -trim chant.png
 
 chant.pdf: chant.ly
-	/Applications/LilyPond.app/Contents/Resources/bin/lilypond -dno-point-and-click chant.ly
+	lilypond -dno-point-and-click chant.ly
 
 .PHONY: clean
 clean:
