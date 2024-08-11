@@ -1,6 +1,6 @@
 \usepackage{array}
 \usepackage[dvipsnames]{xcolor}
-
+\usepackage{longtable}
 
 % HORIZONTAL SPACING
 
@@ -28,11 +28,11 @@
 
 % vertical space between verses
 \newlength\versesepamount
-\setlength\versesepamount{0.7em}
+\setlength\versesepamount{1em}
 
 % vertical space between sections of psalm
 \newlength\stanzagapamount
-\setlength\stanzagapamount{1.2em}
+\setlength\stanzagapamount{1em}
 
 
 
@@ -48,10 +48,10 @@
 {
     % number of first verse
     \setcounter{VerseCounter}{#1}
-    \begin{tabular}{ R{\versenumamount} p{\textamount} }
+    \begin{longtable}{ R{\versenumamount} p{\textamount} }
 }
 {
-    \end{tabular}
+    \end{longtable}
 }
 
 
